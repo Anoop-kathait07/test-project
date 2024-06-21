@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: #17161b;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.MuiTypography-root,
+.MuiFormHelperText-root {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+.layout-pop-nav-wrapper {
+  position: sticky !important;
+  background-color: #17161b !important;
+  top: 0 !important;
+  z-index: 100 !important;
+}
+.layout-pop-nav-inner {
+  position: relative !important;
+}
+.nav_grid {
+  background-color: #17161b !important;
+  border: 0px !important;
+  color: #1f1f1f !important;
+  box-shadow: none !important;
+}
+
+.drawer-menu-acc .css-1fx8m19 {
+  color: #febf32 !important;
+}
+.MuiPaper-root {
+  background-color: #17161b !important;
+  color: #a2a4b9 !important;
+  border-radius: 10px !important;
+}
+
+.drawer-menu-summary,
+.menu-accordion-icon {
+  min-height: 30px !important;
+  height: 100% !important;
+  .MuiAccordionSummary-content {
+    margin-bottom: 0 !important;
+    margin-top: 2px !important;
+  }
+}
+.drawer-link-menu {
+  padding-left: 10px !important;
+}
+.drwaer-link-color {
+  color: #febf32 !important;
+}
+
+.menu-main-heading-links {
+  margin: 0 8px !important;
+  position: relative !important;
+  width: fit-content !important;
+}
+
+.mui-header-menu-nromal-links {
+  font-size: 18px !important;
+  font-family: "Poppins", sans-serif !important;
+  padding: 5px 0;
+  color: #a2a4b9;
+}
+.mui-header-menu-drawer-links {
+  font-size: 22px !important;
+  padding: 5px 0;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+.mui-header-menu-nromal-links:hover {
+  color: #febf32;
+}
+.helper-card-button {
+  color: #000000 !important;
+  background-color: #febf32 !important;
+  border-radius: 10px !important;
+  padding: 12px 10px !important;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+.gradient-text {
+  background-color: #f2d669;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+.gradient-text-banner {
+  font-weight: 700 !important;
+}
+
+.mobile-header {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+  background-color: #17161b !important;
+  color: #a2a4b9 !important;
+  padding: 0 15px !important;
+}
+
+.input-border {
+  border: 1px solid #a2a4b9;
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.input-field {
+  background-color: #17161b;
+  width: 100%;
+}
+
+.MuiFilledInput-input {
+  color: #a2a4b9 !important;
+  background-color: #17161b !important;
+  -webkit-text-fill-color: #a2a4b9 !important;
+  font-size: 34px !important;
+  padding-top: 0 !important;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+.MuiOutlinedInput-input {
+  color: #a2a4b9 !important;
+  background-color: #17161b !important;
+  -webkit-text-fill-color: #a2a4b9 !important;
+  font-size: 16px !important;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+  appearance: textfield; /* Remove default arrow buttons in Chrome and Safari */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.MuiFilledInput-root::before,
+.MuiFilledInput-root::after {
+  border-bottom: none !important;
+}
+.MuiAutocomplete-root {
+  width: 150px !important;
+  border: 1px solid #a2a4b9 !important;
+  border-radius: 10px !important;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+.MuiAutocomplete-clearIndicator,
+.MuiAutocomplete-popupIndicator,
+.MuiSvgIcon-root {
+  color: #a2a4b9 !important;
+}
+
+.icon-font {
+  width: 2em !important;
+  height: 2em !important;
+  color: #febf32 !important;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.blue-text {
+  background-color: #232a3c !important;
+  color: #5889e6 !important;
+  padding: 5px !important;
+  border-radius: 10px !important;
+  text-transform: none !important;
+}
+
+.MuiAlert-root {
+  background-color: #febf32 !important;
+  color: #17161b !important;
+}
+
+.MuiAlert-icon svg {
+  color: #17161b !important;
+}
+
+.MuiTableCell-head,
+.MuiTableSortLabel-root,
+.MuiTableCell-body,
+.MuiIconButton-root,
+.MuiTablePagination-selectLabel,
+.MuiTablePagination-displayedRows,
+.MuiTablePagination-select {
+  color: #ffffff !important;
+}
+
+.tableData .MuiPaper-rounded {
+  border: 1px solid #ffffff !important;
+}
+
+.border-color {
+  border: 1px solid #a2a4b9 !important;
+  color: #a2a4b9 !important;
+}
+
+.color-change {
+  background-color: #ddb965 !important;
+}
