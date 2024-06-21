@@ -4,6 +4,7 @@ pipeline {
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials')
         GIT_REPO = 'https://github.com/Anoop-kathait07/test-project.git'
+	GIT_CREDENTIALS = 'git-pass'	
     
     }
 
