@@ -3,8 +3,8 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials')
-        GIT_REPO = 'https://github.com/yourusername/your-repository.git'
-        IMAGE_NAME = 'yourdockerhubusername/yourimagename'
+        GIT_REPO = 'https://github.com/Anoop-kathait07/test-project.git'
+    
     }
 
     stages {
