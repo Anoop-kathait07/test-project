@@ -4,8 +4,8 @@ set -e
 
 cd /home/anoop/dex
 
-# Ensure the script has permissions to modify the git config
-chmod -R u+w .git
+# Configure Git to treat this directory as safe
+git config --global --add safe.directory /home/anoop/dex
 
 # Stop the existing container if it is running
 if [ "$(docker ps -q -f name=nextapp1)" ]; then
@@ -23,4 +23,5 @@ docker build -t nextapp1 .
 docker run -d -t -p 3000:3000 -v abc --name nextapp1 nextapp1
 
 echo "[$(date)] Deployment script completed."
+
 
