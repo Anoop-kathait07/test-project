@@ -2,6 +2,7 @@
 
 set -e
 
+# Navigate to the project directory
 cd /home/anoop/dex
 
 # Configure Git to treat this directory as safe
@@ -14,13 +15,13 @@ if [ "$(docker ps -q -f name=nextapp1)" ]; then
 fi
 
 # Pull the latest code from the Git repository
-git pull origin main
+sudo -u jenkins git pull origin main
 
 # Build the Docker image
-docker build -t nextapp1 .
+sudo -u jenkins docker build -t nextapp1 .
 
 # Run a new container with the same name
-docker run -d -t -p 3000:3000 -v abc --name nextapp1 nextapp1
+sudo -u jenkins docker run -d -t -p 3000:3000 -v abc --name nextapp1 nextapp1
 
 echo "[$(date)] Deployment script completed."
 
