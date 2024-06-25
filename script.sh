@@ -15,6 +15,14 @@ git config --global --add safe.directory /home/anoop/dex
 if [ "$(docker ps -q -f name=nextapp1)" ]; then
     echo "Stopping running container nextapp1..."
     docker stop nextapp1
+   docker rm nextapp1
+
+elif [ "$(docker ps -aq -f name=nextapp1)" ]; then
+    echo "Removing stopped container nextapp1..."
+    docker rm nextapp1
+
+
+
 fi
 
 # Pull the latest code from the Git repository
