@@ -6,7 +6,7 @@ set -e
 cd /home/anoop/dex
 
 #<<<<<<< HEAD
-=======
+#=======
 # Configure Git to treat this directory as safe
 git config --global --add safe.directory /home/anoop/dex
 
