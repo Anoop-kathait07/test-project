@@ -15,13 +15,13 @@ if [ "$(docker ps -q -f name=nextapp1)" ]; then
 fi
 
 # Pull the latest code from the Git repository
-sudo -u jenkins git pull origin main
+git pull origin main
 
 # Build the Docker image
-sudo -u jenkins docker build -t nextapp1 .
+docker build -t nextapp1 .
 
 # Run a new container with the same name
-sudo -u jenkins docker run -d -t -p 3000:3000 -v abc --name nextapp1 nextapp1
+docker run -d -t -p 3000:3000 -v abc --name nextapp1 nextapp1
 
 echo "[$(date)] Deployment script completed."
 
