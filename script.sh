@@ -5,6 +5,12 @@ set -e
 # Navigate to the project directory
 cd /home/anoop/dex
 
+<<<<<<< HEAD
+=======
+# Configure Git to treat this directory as safe
+git config --global --add safe.directory /home/anoop/dex
+
+>>>>>>> 17fa1984ac1fd730c19ba8030310985cc88ec1e9
 # Stop the existing container if it is running
 if [ "$(docker ps -q -f name=nextapp1)" ]; then
     echo "Stopping running container nextapp1..."
@@ -21,4 +27,5 @@ docker build -t nextapp1 .
 docker run -d -t -p 3000:3000 -v abc --name nextapp1 nextapp1
 
 echo "[$(date)] Deployment script completed."
+
 
