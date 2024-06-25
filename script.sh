@@ -5,12 +5,12 @@ set -e
 # Navigate to the project directory
 cd /home/anoop/dex
 
-<<<<<<< HEAD
+#<<<<<<< HEAD
 =======
 # Configure Git to treat this directory as safe
 git config --global --add safe.directory /home/anoop/dex
 
->>>>>>> 17fa1984ac1fd730c19ba8030310985cc88ec1e9
+#>>>>>>> 17fa1984ac1fd730c19ba8030310985cc88ec1e9
 # Stop the existing container if it is running
 if [ "$(docker ps -q -f name=nextapp1)" ]; then
     echo "Stopping running container nextapp1..."
