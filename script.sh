@@ -2,10 +2,8 @@
 
 set -e
 
+# Navigate to the project directory
 cd /home/anoop/dex
-
-# Ensure the script has permissions to modify the git config
-chmod -R u+w .git
 
 # Stop the existing container if it is running
 if [ "$(docker ps -q -f name=nextapp1)" ]; then
@@ -14,7 +12,7 @@ if [ "$(docker ps -q -f name=nextapp1)" ]; then
 fi
 
 # Pull the latest code from the Git repository
-git pull origin main
+git pull origin main || git branch --set-upstream-to=origin/main main
 
 # Build the Docker image
 docker build -t nextapp1 .
